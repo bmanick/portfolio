@@ -86,6 +86,15 @@ def build():
             if os.path.isfile(s):
                 shutil.copy2(s, d)
 
+    # Copy Root Files (robots.txt, sitemap.xml)
+    print("Copying Root Files...")
+    root_files = ['robots.txt', 'sitemap.xml']
+    for file in root_files:
+        s = os.path.join(base_dir, file)
+        d = os.path.join(build_dir, file)
+        if os.path.exists(s):
+            shutil.copy2(s, d)
+
     print("Build complete!")
 
 if __name__ == "__main__":
