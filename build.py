@@ -18,7 +18,7 @@ def minify_js(content):
     content = re.sub(r'/\*[\s\S]*?\*/', '', content)
     # Remove whitespace (very basic)
     content = re.sub(r'\s+', ' ', content)
-    content = re.sub(r'\s*([=+\-*/{}:;,()])\s*', r'\1', content)
+    # content = re.sub(r'\s*([=+\-*/{}:;,()])\s*', r'\1', content)
     return content.strip()
 
 def minify_html(content):

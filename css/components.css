@@ -280,6 +280,11 @@
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
+    z-index: 1002;
+    -webkit-tap-highlight-color: transparent;
+    padding: 10px;
+    /* Increase touch target */
 }
 
 .mobile-menu-btn span {
