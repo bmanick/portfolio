@@ -66,9 +66,10 @@ def build():
     with open(os.path.join(base_dir, 'index.html'), 'r') as f:
         html_content = f.read()
     
-    # Replace CSS links
-    # Remove existing CSS links and imports
-    html_content = re.sub(r'<link rel="stylesheet" href="css/style.css">', '<link rel="stylesheet" href="css/style.min.css">', html_content)
+    # Inline CSS
+    # Replace the link tag with the actual minified CSS in a style tag
+    css_tag = f'<style>{minified_css}</style>'
+    html_content = re.sub(r'<link rel="stylesheet" href="css/style.css">', css_tag, html_content)
     
     # Replace JS script
     html_content = re.sub(r'<script src="js/main.js"></script>', '<script src="js/main.min.js"></script>', html_content)
