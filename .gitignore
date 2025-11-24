@@ -1,0 +1,15 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build Directory
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Backups
+backup_v1/
+*.bak
+*.swp

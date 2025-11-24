@@ -1,0 +1,305 @@
+/* Components */
+
+/* Logo */
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -1px;
+}
+
+/* Sidebar Nav */
+.sidebar-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.nav-link span {
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.nav-link:hover {
+    color: var(--color-text);
+    transform: translateX(5px);
+}
+
+.sidebar-footer {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.sidebar-footer a {
+    color: var(--color-text-muted);
+    font-size: 1.2rem;
+}
+
+.sidebar-footer a:hover {
+    color: var(--color-accent);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    font-family: var(--font-sans);
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--color-text);
+    color: var(--color-bg);
+}
+
+.btn-primary:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.cta-group {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+/* Philosophy Cards */
+.philosophy-card {
+    background: var(--color-bg-card);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+}
+
+.philosophy-card:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.icon-box {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+/* Stack Cards */
+.stack-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-card:hover {
+    border-color: var(--color-accent);
+}
+
+.card-header {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--space-xs) var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card-header i {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+.card-header h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-family: var(--font-sans);
+}
+
+.tech-list {
+    padding: var(--space-sm);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+    /* Row gap, Column gap */
+}
+
+.tech-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    transition: var(--transition-fast);
+}
+
+.tech-list li:hover {
+    color: var(--color-text);
+    transform: translateX(5px);
+}
+
+.tech-list li i {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    width: 20px;
+    /* Fixed width for alignment */
+    text-align: center;
+}
+
+/* Project Items (Text-Centric) */
+.project-item {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-role {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.project-item p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.project-tags li {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+
+/* Contact */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+.contact-item.link:hover {
+    color: var(--color-accent);
+}
+
+.main-footer {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    color: var(--color-text-dim);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    width: 24px;
+    height: 2px;
+    background: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        direction: ltr !important;
+    }
+
+    .project-item:nth-child(even) .project-content {
+        direction: ltr;
+    }
+
+    .cta-group {
+        flex-direction: column;
+    }
+}

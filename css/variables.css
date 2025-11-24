@@ -1,0 +1,68 @@
+/* CSS Variables - Midnight Slate Theme */
+:root {
+    /* Colors */
+    --color-bg: #0f172a;
+    /* Slate 900 */
+    --color-bg-alt: #1e293b;
+    /* Slate 800 */
+    --color-bg-card: rgba(30, 41, 59, 0.7);
+    /* Slate 800 with opacity */
+
+    --color-text: #f8fafc;
+    /* Slate 50 */
+    --color-text-muted: #94a3b8;
+    /* Slate 400 */
+    --color-text-dim: #64748b;
+    /* Slate 500 */
+
+    --color-accent: #38bdf8;
+    /* Sky 400 */
+    --color-accent-glow: rgba(56, 189, 248, 0.15);
+
+    --color-border: rgba(148, 163, 184, 0.1);
+
+    /* Typography */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    /* Layout */
+    --sidebar-width: 280px;
+    --container-max: 1200px;
+
+    /* Effects */
+    --radius-sm: 4px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg-alt);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-muted);
+}
