@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="0" cy="0" r="300" fill="#38bdf8" opacity="0.05"/>
+  <circle cx="1200" cy="630" r="300" fill="#38bdf8" opacity="0.05"/>
+  
+  <!-- Logo -->
+  <text x="600" y="250" text-anchor="middle" font-family="serif" font-weight="bold" font-size="180" fill="#38bdf8">BM</text>
+  
+  <!-- Name -->
+  <text x="600" y="400" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="60" fill="#ffffff">Balamurugan Manickam</text>
+  
+  <!-- Title -->
+  <text x="600" y="480" text-anchor="middle" font-family="monospace" font-size="36" fill="#94a3b8" letter-spacing="4">ENGINEERING ARCHITECT</text>
+</svg>
