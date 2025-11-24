@@ -13,3 +13,6 @@ __pycache__/
 backup_v1/
 *.bak
 *.swp
+
+# Deployment
+DEPLOY.md
