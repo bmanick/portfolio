@@ -72,7 +72,7 @@ def build():
     html_content = re.sub(r'<link rel="stylesheet" href="css/style.css">', css_tag, html_content)
     
     # Replace JS script
-    html_content = re.sub(r'<script src="js/main.js"></script>', '<script src="js/main.min.js"></script>', html_content)
+    html_content = re.sub(r'<script src="js/main.js" defer></script>', '<script src="js/main.min.js" defer></script>', html_content)
     
     minified_html = minify_html(html_content)
     with open(os.path.join(build_dir, 'index.html'), 'w') as f:
